@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+                android:layout_width="295dp"
+                android:layout_height="133dp"
+                android:text="Voulez-vous  commencez le quiz ?"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.491"
+                android:id="@+id/textView2" android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintHorizontal_bias="0.492"/>
+        <Button
+                android:text="Go!"
+                android:layout_width="317dp"
+                android:layout_height="69dp"
+                android:id="@+id/start"
+                android:backgroundTint="#BA9C27B0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="48dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" app:layout_constraintVertical_bias="0.361"/>
+
+        <TextView
+                android:text="Vous aurez 6 min pour repondre a toutes les questions du Quizz. Are you ready?"
+                android:layout_width="259dp"
+                android:layout_height="93dp"
+                android:id="@+id/textView6" android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" android:textAlignment="center" android:textSize="18sp"/>
+    <ImageView
+            android:layout_width="424dp"
+            android:layout_height="364dp" app:srcCompat="@drawable/ic_quizzz"
+            android:id="@+id/imageView" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2" tools:srcCompat="@drawable/ic_quizzz"
+            android:visibility="visible" tools:visibility="visible" app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.523"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
