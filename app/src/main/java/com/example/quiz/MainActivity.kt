@@ -12,8 +12,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         start.setOnClickListener {
-            val intent = Intent(this, QuizzActivity::class.java)
-            startActivity(intent)
+            val intent = Intent(this, QuizzActivity::class.java) //je cree un intent pour allez vers la page de quiz
+            startActivity(intent)// je lance l'activité
         }
 
     }
